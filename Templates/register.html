@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+        <head>
+                <script src="{{ url_for('static',filename='js/jquery.js') }}"></script>
+                <script src="{{ url_for('static',filename='js/bootstrap.min.js') }}"></script>
+                <link href="{{ url_for('static',filename='css/bootstrap.min.css') }}" rel="stylesheet">
+                <link href="{{ url_for('static',filename='font-awesome-4.7.0/css/font-awesome.min.css') }}" rel="stylesheet">
+                <title>Register</title>
+            </head>
+<style>
+    .h2 {
+        color: #fff;
+    }
+
+    .h2:hover {
+        font-size: 25px;
+        color: #0fdf62;
+        transition-duration: 1s;
+    }
+
+    .login-box {
+        margin-top: 150px;
+        margin-left: 300px;
+    }
+
+    .box input[type="text"],
+    input[type="password"] {
+        border: none;
+        border-bottom: 2.5px solid #fff;
+
+        background: transparent;
+        outline: none;
+        height: 40px;
+        color: #fff;
+        font-size: 17px;
+    }
+
+    .box input[type="text"]:hover {
+        border-bottom-color: #0fdf62;
+
+        transition-duration: 1s;
+    }
+
+    input[type="password"]:hover {
+        border-bottom-color: #0fdf62;
+
+        transition-duration: 1s;
+
+    }
+
+    .box1 input[type="button"] {
+        border: none;
+        outline: none;
+        height: 40px;
+        background: #1c8adb;
+        color: #fff;
+        font-size: 18px;
+        border-radius: 20px;
+        width: 10%;
+    }
+
+    .box1 input[type="button"]:hover {
+        cursor: pointer;
+        background: #0fdf62;
+        color: #000;
+        transition-duration: 1s;
+    }
+    .form ::placeholder{
+    color:white ;
+    text-align: left;
+    opacity: 1; 
+    text-decoration-line: none;
+    background-color:transparent;
+}
+</style>
+
+<body style="background-image:url(/static/img/1.jpg);background-size: 100%;background-repeat: no-repeat;; background-attachment: cover;">
+    
+    <div class="login-box ">
+        <center>
+            <div class="h2">
+                <h1>Welcome to registeration</h1><br>
+            </div>
+        </center>
+        <div class="box">
+            <center>
+                <form action="/register" method="POST" class="form" onsubmit="return validate()">
+                  
+                    <input type="text" name="username" placeholder="Enter your firstname"required>
+                  <br><br><br>
+                    <input type="text" name="email" placeholder="Enter your E-mail id"required>
+                    <br> <br><br>
+                
+                    <input type="password" name="password" placeholder="Enter password"required>
+                    <br>
+                    <br><br>
+                    <input type="password" name="cpassword" placeholder="confirm password"required>
+                    <br><br><br><br>
+                    <div class="box1">
+                        <center>
+                         <button class="btn btn-lg btn-success"type="submit">Register</button>
+                        </center>
+                        <br>
+                    </div>
+                </form>
+            </center>
+        </div>
+        <br>
+
+    </div>
+</body>
+
+</html>

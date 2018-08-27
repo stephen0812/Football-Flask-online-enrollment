@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+        <head>
+                <script src="{{ url_for('static',filename='js/jquery.js') }}"></script>
+                <script src="{{ url_for('static',filename='js/bootstrap.min.js') }}"></script>
+                <link href="{{ url_for('static',filename='css/bootstrap.min.css') }}" rel="stylesheet">
+                <link href="{{ url_for('static',filename='font-awesome-4.7.0/css/font-awesome.min.css') }}" rel="stylesheet">
+                <title>Log in</title>
+            </head>
+<style>
+    
+
+    .login-box {
+        width: 320px;
+        height: 400px;
+        background-color: rgba(0, 0, 0, 0.4);
+        color: #fff;
+        top: 50%;
+        left: 50%;
+        position: absolute;
+
+        box-sizing: border-box;
+        margin-top: -240px;
+        margin-left: -165px;
+        padding: 70px 30px;
+    }
+    .login-box:hover{
+        box-shadow:2px tomato;   
+        transition-duration: 1s;
+    }
+
+    .h2 {
+        font-size: 22px;
+        margin: 0px;
+        padding: 0 0 0px;
+        text-align: center;
+        margin-top: -20px;
+
+    }
+
+    .box input[type="text"],
+    input[type="password"] {
+        border: none;
+        border-bottom: 3px solid #fff;
+        background: transparent;
+        outline: none;
+        height: 40px;
+        color: #fff;
+        font-size: 16px;
+    }
+
+    .box input[type="text"]:hover {
+        border-bottom-color: #0fdf62;
+
+        transition-duration: 1s;
+    }
+
+    .box input[type="password"]:hover {
+        border-bottom-color: #0fdf62;
+
+        transition-duration: 1s;
+
+    }
+
+
+    .box1 input[type="button"] {
+        border: none;
+        outline: none;
+        height: 40px;
+        background: #1c8adb;
+        color: #fff;
+        font-size: 18px;
+        border-radius: 20px;
+        width: 100%;
+    }
+
+    .box1 input[type="button"]:hover {
+        cursor: pointer;
+        background: #39dc79;
+        color: #000;
+    }
+
+    .last {
+        color: #fff;
+        font-size: 20px;
+    }
+    .last a{
+        color: white;
+    }
+    .last a:hover {
+        cursor: pointer;
+        color: green;
+        transition-duration: 1s;
+        font-size: 25px;
+        text-decoration: none;
+    }
+    .form ::placeholder{
+    color:white ;
+    text-align: left;
+    opacity: 1; 
+    text-decoration-line: none;
+    background-color:transparent;
+}
+</style>
+
+<body style="background-image:url(/static/img/3.jpg);background-size: 100%;background-repeat: no-repeat;; background-attachment: cover;">
+   
+    
+    <div class="login-box ">
+        <div class="h2">
+            <h2>Login here</h2>
+        </div>
+        <div class="box">
+            <form class="form" action="/login" method="POST" >
+                <input type="text" name="username" placeholder="Enter user name" required>
+                <br><br>
+                <input type="password" name="password" placeholder="Enter password">
+                <br>
+                <br>
+                <button class="btn btn-success btn-lg" type=submit>Log in</button>
+            </form>
+        </div>
+        <div >
+            <h3>New user <span class="last"><a href="/registerationForm">Click here</a></span>
+                    
+            </h3>
+        </div>
+
+
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+
+        <head>
+                <script src="{{ url_for('static',filename='js/jquery.js') }}"></script>
+                <script src="{{ url_for('static',filename='js/bootstrap.min.js') }}"></script>
+                <link href="{{ url_for('static',filename='css/bootstrap.min.css') }}" rel="stylesheet">
+                <link href="{{ url_for('static',filename='font-awesome-4.7.0/css/font-awesome.min.css') }}" rel="stylesheet">
+                <title>Testimonial</title>
+            </head>
+<style>
+    .img {
+        background-image: url(/static/img/81.jpg);
+        background-size: 100%;
+        padding-bottom: 340px;
+        padding-top: 170px;
+        color: white;
+        opacity: 0.79
+    }
+
+    .bak {
+        background-image: url(/static/img/50.jpg);
+        font-family: Arial, Helvetica, sans-serif;
+        font: oblique;
+        color: rgb(255, 255, 255);
+        margin-top: -30px;
+        padding-bottom: 70px;
+        size: 20px;
+
+
+    }
+
+    .price-table {
+        border: 1px solid #e3e3e3;
+        padding: 20px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 17px;
+    }
+
+    .value {
+        background-color: #009ee3;
+        color: #fff;
+        padding: 20px 0;
+    }
+
+    .price-table ul li {
+        border-top: 1px solid #e3e3e3;
+        display: block;
+        padding: 15px;
+    }
+
+    .overlay {
+        background-image: url(/static/img/banner.jpg);
+        background-size: 100%;
+        padding: 100px 0 120px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: aliceblue;
+    }
+    .red{
+      font-family:Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 20px;
+    }
+    .red:hover{
+        text-decoration-color: #009ee3;
+        transition-delay:2s;
+
+    }
+    .sb{
+        font-size: 20px;
+        word-spacing: 45px;
+        margin-left: 440px;
+    }
+ 
+
+</style>
+
+<body>
+    <div class="img">
+        <div class="container">
+            <div class="row">
+                <div class="title text-left">
+                    <h1 style="font-size: 7em">
+                        <strong>Testimonial</strong>
+                    </h1>
+                    <h3>
+                        <p>Practice bring back the success</p>
+                    </h3>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="red text-center">
+        <h1>Read Our Testimonial</h1>
+        <p>Practise is a good innovation one to success!</p>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="bak">
+        <div class="container-fluid">
+            <br>
+            <div class="row">
+                <div class="col-sm-3">
+                    <img src="/static/img/f.jpg" class="img-thumbnail" width="100%">
+                </div>
+                <div class="col-sm-3">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                        ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+                        eu fugiat nulla pariatur.</p>
+                </div>
+                <div class="col-sm-3">
+                    <img src="/static/img/11.jpg" class="img-thumbnail" width="100%">
+                </div>
+                <div class="col-sm-3">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                        ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+                        eu fugiat nulla pariatur.</p>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-3">
+                    <img src="/static/img/gc.jpg" class="img-thumbnail" width="100%">
+                </div>
+                <div class="col-sm-3">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                        ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+                        eu fugiat nulla pariatur.</p>
+                </div>
+                <div class="col-sm-3">
+                    <img src="/static/img/33.jpg" class="img-thumnail" width="100%">
+                </div>
+                <div class="col-sm-3">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                        ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+                        eu fugiat nulla pariatur.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="coaching text-center">
+        <h1>Classes & Duration</h1>
+    </div>
+
+    <div class="price text-center">
+        <h1>Price List</h1>
+    </div>
+
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-md-4">
+                <div class="price-table text-center">
+                    <hr>
+                    <span>3 Months</span>
+                    <hr>
+                    <br>
+                    <div class="value">
+                        <span>Rs 5000/-</span>
+                        <span></span>
+                        <br>
+                    </div>
+                    <ul>
+                        <li>2 footballs free</li>
+                        <li>2 Staircase free</li>
+                        <li>football boots free</li>
+                        <li>Energy drinks free</li>
+                    </ul>
+
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="price-table text-center">
+                    <hr>
+                    <span>6 Months</span>
+                    <hr>
+                    <br>
+                    <div class="value">
+                        <span>Rs 10,000/-</span>
+                        <span></span>
+                        <br>
+                    </div>
+                    <ul>
+                        <li>2 footballs free</li>
+                        <li>2 Staircase free</li>
+                        <li>football boots free</li>
+                        <li>Energy drinks free</li>
+                    </ul>
+
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="price-table text-center">
+                    <hr>
+                    <span>12 Months</span>
+                    <hr>
+                    <br>
+                    <div class="value">
+                        <span>Rs 15,000/-</span>
+                        <span></span>
+                        <br>
+                    </div>
+                    <ul>
+                        <li>2 footballs free</li>
+                        <li>2 Staircase free</li>
+                        <li>football boots free</li>
+                        <li>Energy drinks free</li>
+                    </ul>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <br>
+    <center>
+        <h2>If you want to join </h2>
+       <a href="/login"> <button type="button" class="btn btn-success">Press the button</button></a>
+    </center>
+    <br>
+    <div class="overlay">
+        <div class="container">
+            <div class="row">
+                <center>
+                    <h2>FOLLOW US</h2>
+                    <br><br>
+                    <p>Beautifully simply follow buttons to help you get followers on</p>
+                </center><br><br><br>
+                <div class="sb">
+                        <a href="#">
+                            <i class="fa fa-thumbs-up fa-3x"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-twitter fa-3x"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-dribbble fa-3x"></i>
+                        </a>
+                    </div>
+            </div>
+            <br>
+            <br>
+        </div>
+    </div>    
+</body>
+
+</html>
