@@ -13,7 +13,7 @@ Framework : Flask.
 Database : SQLite3.
 
 In this website customer can join the football academy In order to register their details in registration form.
-And customer can choose their monthely and yearly packages.
+And customer can also choose their monthly and yearly packages by their own.
 
 
 Thank You.
