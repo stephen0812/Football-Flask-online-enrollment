@@ -1,0 +1,25 @@
+ .imga {
+		background-image:url(../static/img/2.jpg); 
+        background-size: 100%;
+        padding-top: 40px;
+		color:orange;
+        
+    } 
+    .first{
+        opacity: 0.25  
+    }
+    .fi{
+        margin-top: -410px;
+    }
+    .second{
+        opacity: 0.25
+    }
+    .se{
+        margin-top: -410px;
+    }
+    .third{
+        opacity: 0.25;
+    }
+    .th{
+        margin-top: -410px;
+    }
